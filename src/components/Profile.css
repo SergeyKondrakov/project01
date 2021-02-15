@@ -1,0 +1,34 @@
+.content {
+  grid-area: c;
+
+}
+
+.backgroundimg {
+  width: 100%;
+}
+
+.profilewrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profilepic {
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.userprofile {
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+}
+
+p {
+  font-size: 32px;
+}
+
+span {
+  line-height: 25px;
+}

@@ -1,0 +1,25 @@
+.header {
+    grid-area: h;
+  
+  }
+
+.header img {
+    width: 120px;
+  }
+
+.headerwrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+.access {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+.accessmenu {
+    padding: 0 10px 0 10px;
+  }

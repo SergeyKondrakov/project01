@@ -1,0 +1,12 @@
+.nav {
+  grid-area: n;
+  background-color: dodgerblue;
+  color: white;
+
+}
+
+a {
+  font-size: 22px;
+  line-height: 45pt;
+  margin-left: 10px;
+}
