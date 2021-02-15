@@ -1,0 +1,88 @@
+.appwrapper {
+  width: 1280px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-areas:
+  "h h"
+  "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+
+}
+
+.header {
+  grid-area: h;
+
+}
+
+.header img {
+  width: 120px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: dodgerblue;
+  color: white;
+
+}
+
+.content {
+  grid-area: c;
+
+}
+
+.headerwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.access {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.accessmenu {
+  padding: 0 10px 0 10px;
+}
+
+.backgroundimg {
+  width: 100%;
+}
+
+.profilewrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profilepic {
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.userprofile {
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+}
+
+p {
+  font-size: 32px;
+}
+
+span {
+  line-height: 25px;
+}
+
+a {
+  font-size: 22px;
+  line-height: 45pt;
+  margin-left: 10px;
+}
