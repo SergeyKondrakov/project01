@@ -1,0 +1,14 @@
+.mypostscontainer {
+    width: 530px;
+}
+
+.textarea {
+    width: 510px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+button {
+    float: right;
+}

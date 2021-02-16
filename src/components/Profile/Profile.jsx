@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Profile.module.css';
+import MyPosts from './MyPosts/MyPosts'
 
 function Profile() {
     return <div className={classes.content}>
@@ -17,6 +18,8 @@ function Profile() {
           <span>ООО "Кап Инфо Про"</span>
         </div>
       </div>
+
+      <MyPosts />
     
   </div>;
 }
