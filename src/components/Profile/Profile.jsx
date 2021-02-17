@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts'
 
 function Profile() {
     return <div className={classes.content}>
-      <div className={classes.contentwrapper}>
+      <div>
           <img className={classes.backgroundimg} src='https://profile.radidomapro.ru/sites/all/themes/tiger/img/user-bg-ru.jpg'></img>
       </div>    
           

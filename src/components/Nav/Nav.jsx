@@ -4,13 +4,13 @@ import classes from './Nav.module.css';
 function Nav() {
     return <nav className={classes.nav}>
     <div>
-      <a>Главная</a>
+      <a href="/profile">Главная</a>
+    </div>
+    <div>
+      <a href="/dialogs">Сообщения</a>
     </div>
     <div>
       <a>Компании</a>
-    </div>
-    <div>
-      <a>Форум</a>
     </div>
     <div>
       <a>События</a>

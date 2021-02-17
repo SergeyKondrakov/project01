@@ -13,6 +13,10 @@
     align-items: center;
     height: 100%;
   }
+
+.logopic {
+  margin-left: 10px;
+}
   
 .access {
     display: flex;
@@ -23,3 +27,4 @@
 .accessmenu {
     padding: 0 10px 0 10px;
   }
+
