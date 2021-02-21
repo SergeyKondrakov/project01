@@ -1,0 +1,36 @@
+
+.backgroundimg {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.profilewrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 65px;
+}
+
+.profilepic {
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.userprofile {
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  background: white;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 32px;
+}
+
+span {
+  line-height: 25px;
+}

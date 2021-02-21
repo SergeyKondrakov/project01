@@ -5,7 +5,7 @@ function Post(props) {
     return <div>
       
       <div className={classes.post}>
-        <img className={classes.image} src='https://profile.radidomapro.ru/images/membres/auto/165-165-r/609c5e54602900e0bf4778e5f0bb4c79_20170919153659.png'></img>
+        <img className={classes.image} src='https://profile.radidomapro.ru/images/membres/auto/165-165-r/436b6b78c41d810d8750b43540a5e129_20181023164748.png'></img>
         <div className={classes.message}>
           <div>{props.name}</div>
           <div>{props.message}</div>

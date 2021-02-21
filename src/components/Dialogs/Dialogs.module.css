@@ -1,0 +1,25 @@
+.backgroundimg {
+    width: 100%;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    font-size: 18px;
+    line-height: 2.5;
+    margin-left: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color:black;
+}
+
+/* .link:visited {
+    color: black;
+  } */
+
+.link.activelink {
+    color: wheat;
+  }

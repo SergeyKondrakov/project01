@@ -5,8 +5,17 @@
 
 }
 
-a {
+.link {
   font-size: 22px;
   line-height: 45pt;
   margin-left: 10px;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: white;
+}
+
+.link.activelink {
+  color: wheat;
 }
