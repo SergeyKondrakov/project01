@@ -2,14 +2,9 @@ import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post'
 
-function MyPosts() {
+function MyPosts(props) {
 
-  let postsData = [
-    { id: 1, message: "Hi, how are you?" },
-    { id: 2, message: "It's my first post" },
-  ]
-
-  let postsElements = postsData.map ( posts => <Post name="Сергей Кондраков" message={posts.message} />)
+  let postsElements = props.postsData.map ( posts => <Post name="Сергей Кондраков" message={posts.message} />)
 
   return <div>
     <div className={classes.mypostscontainer}>
