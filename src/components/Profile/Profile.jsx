@@ -10,7 +10,7 @@ function Profile(props) {
     
     <ProfileInfo />
 
-    <MyPosts postsData={props.postsData}/>
+    <MyPosts postsData={props.state.postsData}/>
 
   </div>;
 }

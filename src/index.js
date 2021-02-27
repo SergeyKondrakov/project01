@@ -3,29 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from './redux/state';
+import { BrowserRouter } from 'react-router-dom';
 
-let postsData = [
-  { id: 1, message: "Hi, how are you?" },
-  { id: 2, message: "It's my first post" },
-]
-
-let dialogsData = [
-  {id: 1, name: "Xavier Dumoulie" },
-  {id: 2, name: "Анастасия Вишникина" },
-  {id: 3, name: "Олег Блохин" },
-  {id: 4, name: "Анастасия Клименкова" },
-]
-
-let messagesData = [
-  {id: 1, message: "Быть или не быть - вот в чем вопрос." },
-  {id: 2, message: "Мой дядя самых честных правил, когда не в шутку занемог..." },
-  {id: 3, message: "Всё смешалось в доме Облонских" },
-]
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App postsData={postsData} dialogsData={dialogsData} messagesData={messagesData}/>
+    <BrowserRouter>
+      <App state={state} />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
