@@ -1,3 +1,6 @@
+let renderEntireTree = () => {
+}
+
 let state = {
 
     profilePage: {
@@ -6,6 +9,8 @@ let state = {
             { id: 1, message: "Hi, how are you?" },
             { id: 2, message: "It's my first post" },
         ],
+
+        newPostText: "",
     },
 
     messagesPage: {
@@ -23,6 +28,26 @@ let state = {
             { id: 3, message: "Всё смешалось в доме Облонских" },
         ],
     },
+};
+
+export const addPost = () => {
+    let newPost = {
+        id: 3,
+        message: state.profilePage.newPostText,
+    };
+
+    state.profilePage.postsData.push(newPost);
+    state.profilePage.newPostText = "";
+    renderEntireTree(state);
+}
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    renderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    renderEntireTree = observer;
 }
 
 export default state;
