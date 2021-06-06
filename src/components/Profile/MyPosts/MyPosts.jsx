@@ -2,21 +2,22 @@ import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post'
 
+
 function MyPosts(props) {
 
-  let postsElements = props.postsData.map(posts => <Post name="Сергей Кондраков" message={posts.message} />)
+  let postsElements = props.posts.map(posts => <Post name="Сергей Кондраков" message={posts.message} />)
 
   let newPost = React.createRef();
 
   let addPost = () => {
     if (newPost.current.value != "") {
-      props.dispatch({type: 'ADD-POST'});
+      props.addPost();
     }
   };
 
   let onPostChange = () => {
     let text = newPost.current.value;
-    props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text});
+    props.updateNewPostText(text);
 
   };
 
